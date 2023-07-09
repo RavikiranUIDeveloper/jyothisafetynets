@@ -1,0 +1,49 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?jyothisafetynets\.in
+RewriteRule ^(.*)$ http://www.jyothisafetynets.in/$1 [R,L]
+
+
+RewriteRule index\.html index.php [L]
+RewriteRule about-us\.html about-us.php [L]
+RewriteRule agro-shade-nets\.html agro-shade-nets.php [L]
+RewriteRule anti-bird-nets\.html anti-bird-nets.php [L]
+RewriteRule balcony-safety-nets\.html balcony-safety-nets.php [L]
+
+RewriteRule bird-protection-nets\.html bird-protection-nets.php [L]
+RewriteRule bird-spikes\.html bird-spikes.php [L]
+RewriteRule blog\.html blog.php [L]
+RewriteRule carparking-safety-net\.html carparking-safety-net.php [L]
+RewriteRule children-safety-nets\.html children-safety-nets.php [L]
+RewriteRule coconut-safety-nets\.html coconut-safety-nets.php [L]
+RewriteRule construction-safety-nets\.html construction-safety-nets.php [L]
+RewriteRule contact\.html contact.php [L]
+RewriteRule cricket-practice-nets\.html cricket-practice-nets.php [L]
+RewriteRule duct-area-safety-nets\.html duct-area-safety-nets.php [L]
+RewriteRule faqs\.html faqs.php [L]
+RewriteRule gallery\.html gallery.php [L]
+RewriteRule garden-nettting\.html garden-nettting.php [L]
+RewriteRule glass-safety-nets\.html glass-safety-nets.php [L]
+RewriteRule industrial-safety-nets\.html industrial-safety-nets.php [L]
+RewriteRule monkey-safety-nets\.html monkey-safety-nets.php [L]
+RewriteRule mosquito-nets\.html mosquito-nets.php [L]
+RewriteRule pigeon-safety-nets\.html pigeon-safety-nets.php [L]
+RewriteRule plant-support-netting\.html plant-support-netting.php [L]
+RewriteRule shade-nets\.html shade-nets.php [L]
+RewriteRule sports-nets\.html sports-nets.php [L]
+RewriteRule staircase-safety-nets\.html staircase-safety-nets.php [L]
+RewriteRule swimming-pool-safety-net\.html swimming-pool-safety-net.php [L]
+RewriteRule videos\.html videos.php [L]
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php56” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
